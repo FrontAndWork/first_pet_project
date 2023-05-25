@@ -1,0 +1,169 @@
+.services {
+	&__inner {
+		padding: 90px 0px 150px;
+	}
+
+	&__title {
+		color: $primary2;
+		font-weight: 400;
+		font-size: 32px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+
+	&__breadcrumbs {
+		margin-bottom: 60px;
+		position: relative;
+
+		&::before{
+			content: "";
+			display: block;
+			width: 4px;
+			height: 4px;
+			position: absolute;
+			left: 65px;
+			top: 9px;
+			background-color: $primary3;
+		}
+		a {
+			margin-right: 34px;
+			font-size: 13px;
+			color: $primary2;
+
+				&:first-child {
+					&:hover {
+						color: $primary4;
+					}
+				}
+				
+				&:last-child{
+					margin-right: 0px;
+					color: $primary6;
+					cursor: default;
+				}
+		}
+	}
+	
+
+	&__content {
+		@include flex-row-sb();
+		align-items: flex-start;
+	}
+
+	&__content-text {
+		max-width: 670px;
+	}
+
+	&__text-leftline {
+		border-left: 3px solid $primary4;
+		padding-left: 40px;
+		margin-bottom: 65px;
+
+		p {
+			color: $primary2;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	&__text-oil {
+		margin-bottom: 60px;
+
+		span {
+			color: $primary2;
+			display: inline-block;
+			font-weight: 400;
+			font-size: 18px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: $primary2;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	&__text-gas {
+		margin-bottom: 60px;
+
+		span {
+			color: $primary2;
+			display: inline-block;
+			font-weight: 400;
+			font-size: 18px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: $primary2;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	&__text-service {
+		span {
+			color: $primary2;
+			display: inline-block;
+			font-weight: 400;
+			font-size: 18px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 30px;
+		}
+
+		p {
+			color: $primary2;
+			font-weight: 400;
+			font-size: 14px;
+		}
+	}
+
+	&__content-data {
+		max-width: 525px;
+		min-height: 620px;
+		padding: 50px 60px 60px 60px;
+		background-color: $primary3;
+	}
+
+	&__data-title {
+			color: $primary1;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 20px;
+		}
+
+		&__data-blocks {
+			@include flex-row-sb();
+			flex-wrap: wrap;
+		}
+
+		&__data-block {
+			@include flex-col-sb-r();
+			width: 180px;
+			height: 130px;
+			margin-bottom: 35px;
+
+			&:nth-child(5){
+				margin-bottom: 0px;
+			}
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
+			span {
+				font-weight: 900;
+				font-size: 64px;
+				text-transform: uppercase;
+			}
+		}
+}

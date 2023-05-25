@@ -1,0 +1,48 @@
+.header-bg {
+	width: 100%;
+	max-height: 166px;
+	background-color: $primary3;
+
+	&__top {
+		padding: 25px 0px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid $primary5;
+		@include flex-row-sb ();
+	}
+
+	&__contacts-email {
+		margin-right: 50px;
+	}
+
+	&__nav-list {
+		@include flex-row-sb ();
+		padding-bottom: 30px;
+		
+		li {
+			@include flex-row-sb();
+			margin-right: 108px;
+			
+				&:last-child {
+					margin-right: 0px;
+				}
+
+			}
+		}
+		
+	&__item-link {
+		font-weight: 300;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		transition-duration: 2s;
+		
+		&:hover {
+			border-bottom: 1px solid $primary1;
+		}
+	}
+}
+
+.header-bg__inner {
+	max-width: 1320px;
+	margin: 0 auto;
+	padding: 0px 10px;
+}

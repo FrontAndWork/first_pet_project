@@ -1,0 +1,135 @@
+.projects {
+	background-color: $primary6;
+	@include bg-base();
+	height: 1010px;
+
+	&__inner {
+		padding: 125px 0px 0px;
+	}
+
+	&__top {
+		margin-bottom: 85px;
+		@include flex-row-sb();
+	}
+
+	&__top-title {
+		font-weight: 400;
+		font-size: 36px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-right: 780px;
+	}
+
+	&__top-link {
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+	}
+
+	&__top-arrows {
+		max-width: 140px;
+		max-height: 70px;
+		@include flex-row-sb();
+		gap: 15px;
+
+		button {
+			cursor: pointer;
+			display: block;
+			@include btc-blue-arrow();
+			transition-duration: 0.5s;
+			
+				&:hover {
+					background-color: $primary4;
+				}
+		}
+	}
+
+	&__card {
+		height: 600px;
+		width: 1300px;
+		@include flex-row-sb();
+	}
+	
+	&__card-image {
+		height: 600px;
+		width: 710px;
+		padding: 45px;
+		@include bg-base();
+		background-image: url(../../../images/img-projects-card.jpg);
+
+		@include flex-col-sb-r();
+		justify-content: flex-end;
+	}
+
+	&__image-title {
+		font-weight: 700;
+		font-size: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+	}
+
+	&__card-data {
+		padding: 55px 60px;
+		width: 590px;
+		height: 600px;
+		background-color: $primary3;
+	}
+
+	&__data-top {
+		@include flex-row-sb();
+	}
+
+	&__data-130000{
+		width: 210px;
+		.data-mb{
+			margin-bottom: 30px;
+		}
+
+		span {
+			display: inline-block;
+			margin-right: 15px;
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 40px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+		}
+	}
+
+	&__data-3 {
+		width: 210px;
+		.data-mb{
+			margin-bottom: 30px;
+		}
+
+		span {
+			display: inline-block;
+			margin-right: 15px;
+			margin-bottom: 10px;
+			font-weight: 700;
+			font-size: 40px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+		}
+	}
+
+	&__data-link {
+		display: block;
+		width: 170px;
+		height: 51px;
+		margin-top: 217px;
+		padding: 15px 30px;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		border: 1px solid $primary1;
+		transition-duration: 0.5s;
+
+		&:hover {
+			background-color: $primary4;
+		}
+	}
+}

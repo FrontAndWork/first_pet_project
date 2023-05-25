@@ -1,0 +1,12 @@
+@import "./_fonts.scss";
+@import "./_reset.scss";
+@import "./_variables.scss";
+@import "./_extends.scss";
+@import "./_mixins.scss";
+@import "./_abstracts.scss";
+@import "./_animation.scss";
+@import "./_common.scss";
+
+
+// после Миксинов мы можем подключать всё что угодно,шрифты подключенны первыми так как дольшего всего могут подружаться,по этому эту задачу назначаем первой //
+// Файл common.scss желательно подключить самы последним// 

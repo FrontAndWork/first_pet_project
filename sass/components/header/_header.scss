@@ -1,0 +1,39 @@
+.header {
+	position: absolute;
+	left: 302px;
+	z-index: 2;
+
+		&__top {
+			padding: 25px 0px;
+			margin-bottom: 30px;
+			border-bottom: 1px solid $primary5;
+			@include flex-row-sb ();
+		}
+
+		&__contacts-email {
+			margin-right: 50px;
+		}
+
+		&__nav-list {
+			@include flex-row-sb ();
+			padding-bottom: 30px;
+
+				li {
+					@include flex-row-sb();
+					margin-right: 110px;
+					&:last-child {
+						margin-right: 0px;
+					}
+				}
+		}
+
+		&__item-link {
+			font-weight: 300;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			&:hover {
+				border-bottom: 1px solid $primary1;
+			}
+		}
+
+	}

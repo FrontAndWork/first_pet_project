@@ -1,0 +1,120 @@
+.first-section {
+	position: relative;
+
+		&__image {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			left: 0px;
+			z-index: -1;
+		}
+
+		&__content {
+			padding: 250px 0px 100px;
+			@include flex-row-sb ();
+		}
+		
+		&__info {
+			max-width: 635px;
+			margin-right: 120px;
+			width: 100%;
+		}
+		
+		&__info-title {
+			margin-bottom: 30px;
+			font-weight: 300;
+			font-size: 60px;
+		}
+		
+		&__info-text {
+			border-left: 2px solid $primary1;
+			padding-left: 28px;
+			margin-bottom: 50px;
+			width: 415px;
+		}
+		
+		&__info-link {
+			color: $primary1;
+			max-width: 170px;
+			max-height: 51px;
+			padding: 15px 30px;
+			background-color: $primary4;
+			font-weight: 700;
+			font-size: 16px;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+
+			transition-duration: 0.5s;
+			&:hover {
+				background-color: $primary8;
+			}
+		}
+		
+		&__info-arrows {
+			margin-top: 130px;
+			max-width: 140px;
+			max-height: 70px;
+			@include flex-row-sb();
+		
+			button {
+				cursor: pointer;
+				display: block;
+				@include btc-blue-arrow();
+				transition-duration: 0.5s;
+
+				&:hover {
+					background-color: $primary4;
+				}
+			}
+		}
+		
+		&__drawing {
+			background: rgba(51, 51, 51, 0.3);
+			padding: 30px 35px 35px 35px;
+			margin-top: 285px;
+			width: 525px;
+			height: 235px;
+		
+			span {
+				display: inline-block;
+				font-weight: 700;
+				letter-spacing: 0.05em;
+				text-transform: uppercase;
+				margin-bottom: 25px;
+			}
+		}
+		
+		&__drawing-lists {
+			@include flex-row-sb();
+			justify-content: left;
+		}
+		
+		&__drawing-img {
+			width: 160px;
+			height: 60px;
+			background-image: url(../../../images/header-drawing.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		
+		&__drawing-lists {
+			font-weight: 300;	
+		
+			li {
+				margin-bottom: 15px;
+		
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+		
+		&__drawing-list-t {
+			margin-right: 15px;
+		}
+		
+		&__drawing-list-d {
+			margin-right: 75px;
+		}
+}

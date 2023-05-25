@@ -1,0 +1,101 @@
+.develop {
+
+	&__inner {
+		padding: 150px 0px 150px;
+		@include flex-row-sb();
+	}
+
+	&__card {
+		width: 1080px;
+		height: 530px;
+		padding: 60px;
+		margin: 0px 50px;
+		@include flex-row-sb();
+		background-color:$primary7;
+	}
+	
+	&__info-label {
+		width: 165px;
+		height: 35px;
+		padding: 8px 15px 8px;
+		margin-bottom: 40px;
+		background-color: $primary3;
+		
+		span {
+			text-align: center;
+			font-size: 13px;
+			opacity: 0.75;
+		}
+	}
+
+	&__info-title {
+		font-weight: 700;
+		font-size: 18px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		color: $primary2;
+	}
+
+	&__info-text {
+		width: 390px;
+		height: 285px;
+		font-weight: 400;
+		margin-left: 30px;
+		color: $primary2;
+
+		p {
+			position: relative;
+			margin-bottom: 18px;
+
+			&:last-child{
+				margin-bottom: 0px;
+			}
+
+			&::before{
+				content: "";
+				position: absolute;
+				display: block;
+				width: 8px;
+				height: 8px;
+				background-color: $primary4;
+				top: 5px;
+				left: -30px;
+			}
+		}
+	}
+
+	&__arrow-btc-l {
+		cursor: pointer;
+		@include btc-blue-arrow();
+		transition-duration: 0.5s;
+
+			&:hover {
+				background-color: $primary4;
+			}	
+	}
+
+
+	&__arrow-btc-r {
+		cursor: pointer;
+		@include btc-blue-arrow();
+		transition-duration: 0.5s;
+
+			&:hover {
+				background-color: $primary4;
+			}
+	}
+	
+	.develop__card-image {
+		width: 480px;
+		height: 410px;
+		background-image: url(../../../images/develop-img.jpg);
+		@include bg-base();
+	}
+
+	.develop__card-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}

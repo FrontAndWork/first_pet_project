@@ -1,0 +1,71 @@
+.history {
+	background-image: url(../../../images/bg-history.jpg);
+	@include bg-base();
+	height: 798px;
+
+	&__inner {
+		padding: 120px 0px 120px;
+		@include flex-row-sb();
+		justify-content: flex-start;
+		position: relative;
+	}
+
+	&__content {
+		width: 525px;
+		margin-right: 180px;
+	}
+
+	&__content-title {
+		font-size: 36px;
+		font-weight: 400;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+
+	&__content-text {
+		font-weight: 400;
+
+		p {
+			margin-bottom: 17px;
+
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+
+	}
+
+	&__map {
+		position: absolute;
+		left: 740px;
+		bottom: 48px;
+		margin-top: 512px;
+	}
+
+	&__map-list {
+		font-size: 16px;
+	}
+	
+	&__list-item {
+		position: relative;
+		margin-bottom: 10px;
+
+		&:before {
+			display: block;
+			position: absolute;
+			content: "";
+			width: 8px;
+			height: 8px;
+			background-color: $primary1;
+			top: 35%;
+			left: -30px;
+		}
+	
+		&:last-child{
+			margin-bottom: 0px;
+		}
+	}
+
+	
+}

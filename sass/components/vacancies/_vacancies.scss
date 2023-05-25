@@ -1,0 +1,154 @@
+.vacancies {
+
+	&__inner {
+		padding: 90px 0 150px;
+	}
+
+	&__title {
+		color: $primary2;
+		font-weight: 400;
+		font-size: 32px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 60px;
+	}
+
+	&__breadcrumbs {
+		margin-bottom: 60px;
+		
+			a{
+				position: relative;
+				color: $primary2;
+				font-size: 13px;
+				margin-right: 34px;
+
+					&:first-child {
+						&:hover {
+							color: $primary4;
+						}
+					}
+
+					&:nth-child(2){
+						&:hover {
+							color: $primary4;
+						}
+					}
+
+					&:last-child {
+						margin-right: 0px;
+						color: $primary6;
+						cursor: default;
+					}
+				}
+		}
+
+	&__breadcrumbs-squaer {
+		&::before {
+			content: "";
+			display: inline-block;
+			width: 4px;
+			height: 4px;
+			background-color: $primary3;
+			position: absolute;
+			top: 6px;
+			left: -20px;
+		}
+	}
+
+	&__tanker {
+		margin-bottom: 60px;
+	}
+
+	&__tanker-title {
+		color: $primary2;
+		font-weight: 400;
+		font-size: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+	}
+
+	&__carrier-title {
+		color: $primary2;
+		font-weight: 400;
+		font-size: 24px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 45px;
+	}
+
+	&__cards {
+		@include flex-row-sb();
+		flex-wrap: wrap;
+	}
+
+	&__card {
+		width: 416px;
+		height: 235px;
+		padding: 35px 40px;
+		border: 1px solid rgba(51, 51, 51, 0.3);
+
+		a {
+			display: inline-block;
+			font-size: 13px;
+			padding: 10px 15px 9px;
+			max-width: 101px;
+			max-height: 37px;
+			background-color: $primary3;
+			margin-top: 25px;
+			transition-duration: 0.5s;
+			
+			&:hover {
+				background-color: $primary4;
+			}
+		}
+
+		&--mb {
+			margin-bottom: 24px;
+		}
+	}
+
+	&__card-title {
+		color: #333333;
+		font-weight: 400;
+		font-size: 16px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+
+	&__card-list {
+		
+		li {
+			margin-left: 35px;
+			position: relative;
+			color: $primary2;
+			font-size: 16px;
+			margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0px;
+				}
+			}
+		}
+
+	&__icon-ship {
+		&::before {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/redship.svg);
+			left: -35px;
+			top: 0px;
+		}
+	}
+
+	&__icon-list {
+		&::before {
+			position: absolute;
+			display: block;
+			content: url(../../../icon/redlist.svg);
+			left: -35px;
+			top: 0px;
+		}
+	}
+}	

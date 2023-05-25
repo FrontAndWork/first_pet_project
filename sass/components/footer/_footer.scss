@@ -1,0 +1,86 @@
+.footer {
+	height: 445px;
+	background-color: $primary3;
+
+	&__inner {
+		padding: 60px 0 70px;
+	}
+
+	&__logo {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+
+	&__logo-link {
+		@include flex-row-sb();
+	}
+	
+	&__items {
+		@include flex-row-sb();
+		align-items: flex-start;
+	}
+
+	&__lists {
+		@include flex-row-sb();
+		align-items: flex-start;
+		gap: 24px;
+	}
+	
+	&__list {
+		width: 305px;
+		p{
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0.05em;
+			text-transform: uppercase;
+			margin-bottom: 25px;
+			}
+	}
+
+	&__item {
+		margin-bottom: 15px;
+		font-weight: 300;
+
+		&:last-child {
+			margin-bottom: 0px;
+		}
+	}
+
+	&__item-link {
+		&:hover {
+			border-bottom: 1px solid $primary1;
+		}
+	}
+
+	&__contacts {
+		width: 315px;
+	}
+
+	&__addres-moscow {
+		margin-bottom: 15px;
+		text-align: right;
+	}
+
+	&__addres-spb {
+		margin-bottom: 30px;
+		text-align: right;
+	}
+
+	&__tel {
+		display: block;
+		text-align: right;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-weight: 300;
+		margin-bottom: 11px;
+	}
+
+	&__mail {
+		display: block;
+		text-align: right;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+}
